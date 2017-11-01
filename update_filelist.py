@@ -5,7 +5,7 @@ from random import shuffle
 from os import listdir, path, environ
 
 REDIS_PW = environ['REDISPW']
-r = redis.StrictRedis(host='172.30.217.247', port=6379, db=0, password=REDIS_PW)
+r = redis.StrictRedis(host='172.30.28.75', port=6379, db=0, password=REDIS_PW)
 
 # absolute dir the script is in
 script_dir = path.dirname(__file__)

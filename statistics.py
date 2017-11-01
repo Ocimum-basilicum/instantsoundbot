@@ -6,10 +6,10 @@ from datetime import date, timedelta
 
 REDIS_PW = os.environ['REDISPW']
 #redis database 1 --> statistics database
-r_stats = redis.StrictRedis(host='172.30.217.247', port=6379, db=1, password=REDIS_PW)
+r_stats = redis.StrictRedis(host='172.30.28.75', port=6379, db=1, password=REDIS_PW)
 
 #redis database 0 for fileset
-r = redis.StrictRedis(host='172.30.217.247', port=6379, db=0, password=REDIS_PW)
+r = redis.StrictRedis(host='172.30.28.75', port=6379, db=0, password=REDIS_PW)
 
 
 #writes every chat_id into "unique_users" set - alltime and daily
