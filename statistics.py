@@ -92,7 +92,7 @@ def get_stats():
             sound_stats[i] = r_stats.get(i)
 
     #iterates from startdate to enddate
-    start_date = date(2017, 9, 28)
+    start_date = date(2017, 11, 1)
     end_date = date_today
     date_list = []
     daily_requests = []
